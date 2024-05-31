@@ -11,23 +11,25 @@
       
       
       
+        <link rel="prev" href="../presentation/">
       
-        <link rel="next" href="Virtualisation/Proxmox/presentation/">
+      
+        <link rel="next" href="../../../liensutiles/">
       
       
-      <link rel="icon" href="assets/images/favicon.ico">
+      <link rel="icon" href="../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
     
     
       
-        <title>Documentation d'Etienne</title>
+        <title>Installation de Proxmox - Documentation d'Etienne</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,7 +48,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -55,11 +57,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Page d'accueil" >
+        <meta  property="og:title"  content="Installation de Proxmox - Documentation d'Etienne" >
       
         <meta  property="og:description"  content="Documentation d'Etienne sur des logiciels et du matériel." >
       
-        <meta  property="og:image"  content="./assets/images/social/index.png" >
+        <meta  property="og:image"  content="./assets/images/social/Virtualisation/Proxmox/installation.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -71,11 +73,11 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Page d'accueil" >
+        <meta  name="twitter:title"  content="Installation de Proxmox - Documentation d'Etienne" >
       
         <meta  name="twitter:description"  content="Documentation d'Etienne sur des logiciels et du matériel." >
       
-        <meta  name="twitter:image"  content="./assets/images/social/index.png" >
+        <meta  name="twitter:image"  content="./assets/images/social/Virtualisation/Proxmox/installation.png" >
       
     
     
@@ -98,7 +100,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#page-daccueil" class="md-skip">
+        <a href="#installation-de-proxmox" class="md-skip">
           Aller au contenu
         </a>
       
@@ -114,9 +116,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="." title="Documentation d&#39;Etienne" class="md-header__button md-logo" aria-label="Documentation d'Etienne" data-md-component="logo">
+    <a href="../../.." title="Documentation d&#39;Etienne" class="md-header__button md-logo" aria-label="Documentation d'Etienne" data-md-component="logo">
       
-  <img src="assets/images/perso.png" alt="logo">
+  <img src="../../../assets/images/perso.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -133,7 +135,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Page d'accueil
+              Installation de Proxmox
             
           </span>
         </div>
@@ -250,9 +252,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Documentation d&#39;Etienne" class="md-nav__button md-logo" aria-label="Documentation d'Etienne" data-md-component="logo">
+    <a href="../../.." title="Documentation d&#39;Etienne" class="md-nav__button md-logo" aria-label="Documentation d'Etienne" data-md-component="logo">
       
-  <img src="assets/images/perso.png" alt="logo">
+  <img src="../../../assets/images/perso.png" alt="logo">
 
     </a>
     Documentation d'Etienne
@@ -276,19 +278,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -297,7 +290,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -306,8 +298,10 @@
       
   
   
+    
   
   
+  
     
     
     
@@ -317,11 +311,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
@@ -335,7 +329,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Virtualisation
@@ -346,6 +340,8 @@
                 
   
   
+    
+  
   
   
     
@@ -354,11 +350,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
         
           
           <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
@@ -372,7 +368,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             Proxmox
@@ -386,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="Virtualisation/Proxmox/presentation/" class="md-nav__link">
+      <a href="../presentation/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -404,10 +400,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="Virtualisation/Proxmox/installation/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Installation de Proxmox
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -416,6 +432,35 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#telechargement" class="md-nav__link">
+    <span class="md-ellipsis">
+      Téléchargement
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -483,7 +528,7 @@
   
   
     <li class="md-nav__item">
-      <a href="liensutiles/" class="md-nav__link">
+      <a href="../../../liensutiles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -522,10 +567,10 @@
   
 
 
-<h1 id="page-daccueil">Page d'accueil</h1>
-<p>Bonjour, et bienvenue sur ma documentation.</p>
-<p>Il y a des explications sur des logiciels, du matériel que j'ai pu utiliser pendant ma formation de BTS SIO et mes stages.</p>
-<p>Pour accéder aux différentes pages il y a un menu sur le coté, ou sinon utilisez la recherche à droite.</p>
+<h1 id="installation-de-proxmox">Installation de Proxmox</h1>
+<h2 id="telechargement">Téléchargement</h2>
+<p>Etape 1) </p>
+<p>Il faut le télécharger gratuitement sur <a href="https://www.proxmox.com/en/proxmox-virtual-environment/overview" title="Site de Proxmox">le site officiel</a>.  </p>
 
 
 
@@ -558,7 +603,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">30 mai 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">31 mai 2024</span>
   </span>
 
     
@@ -677,10 +722,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": ["navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.sections", "toc.integrate", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   </body>
