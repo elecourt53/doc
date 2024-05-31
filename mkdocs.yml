@@ -1,8 +1,12 @@
 site_name: Documentation d'Etienne
+site_description: Documentation d'Etienne sur des logiciels et du matériel.
+repo_url: https://github.com/elecourt53/doc
+edit_uri: edit/main/docs/
 theme:
   name: material
+  logo: ./assets/images/perso.png
+  favicon: ./assets/images/favicon.ico
   features:
-    - navigation.tabs
     - navigation.sections
     - toc.integrate
     - navigation.top
@@ -16,25 +20,33 @@ theme:
     - scheme: default
       toggle:
         icon: material/toggle-switch-off-outline 
-        name: Switch to dark mode
+        name: Thème sombre
       primary: teal
       accent: purple 
     - scheme: slate 
       toggle:
         icon: material/toggle-switch
-        name: Switch to light mode    
+        name: Thème clair    
       primary: teal
       accent: lime
+  icon:
+    repo: fontawesome/brands/github
 
 plugins:
   - social
   - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      locale: fr
+  - git-committers:
+      repository: elecourt53/doc
+      branch: main
 
 extra:
   social:
-    - icon: fontawesome/brands/github-alt
+    - icon: fontawesome/brands/github
       link: https://github.com/elecourt53
-    - icon: fontawesome/brands/twitter
+    - icon: fontawesome/brands/x-twitter
       link: https://x.com/elecourt53
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/elecourt53
@@ -59,3 +71,11 @@ markdown_extensions:
 copyright: |
   &copy; 2024 <a href="https://github.com/elecourt53"  target="_blank" rel="noopener">Etienne</a>
 
+nav:
+  - Page d'accueil: 'index.md'
+  - Virtualisation:
+    - Proxmox:
+      - 'Présentation de Proxmox': 'Virtualisation/Proxmox/presentation.md'
+      - 'Installation de Proxmox': 'Virtualisation/Proxmox/installation.md'
+  - A propos:
+    - 'Liens utiles': 'liensutiles.md'
