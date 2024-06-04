@@ -8,7 +8,7 @@ theme:
   favicon: ./assets/images/favicon.ico
   features:
     - navigation.sections
-    - toc.integrate
+#    - toc.integrate
     - navigation.top
     - search.suggest
     - search.highlight
@@ -41,19 +41,26 @@ plugins:
   - git-committers:
       repository: elecourt53/doc
       branch: main
+  - glightbox
 
 extra:
   social:
+    - icon: octicons/home-fill-24
+      link: https://elecourt53.github.io
+      name: Mes réseaux sociaux
     - icon: fontawesome/brands/github
       link: https://github.com/elecourt53
-    - icon: fontawesome/brands/x-twitter
-      link: https://x.com/elecourt53
+      name: Mon GitHub
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/elecourt53
+      name: Mon profil LinkedIn
+  generator: false
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - admonition
@@ -67,15 +74,35 @@ markdown_extensions:
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - md_in_html
 
 copyright: |
   &copy; 2024 <a href="https://github.com/elecourt53"  target="_blank" rel="noopener">Etienne</a>
 
 nav:
-  - Page d'accueil: 'index.md'
+  - 🏠 Page d'accueil: 'index.md'
+##  - Documentation:
+##    - 📝 MkDocs:
+##      - '🧑‍🏫 Présentation de MkDocs': 'Documentation/MkDocs/index.md'
+##      - '🔧 Installation de MkDocs': 'Documentation/MkDocs/installation.md'
   - Virtualisation:
     - Proxmox:
-      - 'Présentation de Proxmox': 'Virtualisation/Proxmox/presentation.md'
-      - 'Installation de Proxmox': 'Virtualisation/Proxmox/installation.md'
+      - '🧑‍🏫 Présentation': 'Virtualisation/Proxmox/index.md'
+      - '🔧 Installation': 'Virtualisation/Proxmox/installation.md'
+#      - '🔄 Mettre a jour': 'Virtualisation/Proxmox/majproxmox.md'
+#      - 📚 Cluster:
+#        - '🧑‍🏫 Présentation des clusters': 'Virtualisation/Proxmox/Cluster/index.md'
+#        - '🔧 Création d un cluster': 'Virtualisation/Proxmox/Cluster/creation.md'
+      - 🖥️ Windows 11:
+        - 'Installation de Windows 11 sur Proxmox': 'Virtualisation/Proxmox/Windows11/installation.md'
+        - 'Bypass Compte Microsoft': 'Virtualisation/Proxmox/Windows11/bypassmicrosoft.md'
+        - 'Après l installation (pilotes réseaux, activation RDP)': 'Virtualisation/Proxmox/Windows11/postinstallation.md'
+#  - Linux:
+#    - '🔧 Commandes utiles': 'Linux/Commandes/index.md'
+#    - Réseau:
+#      - '🔧 Configuration réseau': 'Linux/Reseau/config.md'
+
   - A propos:
-    - 'Liens utiles': 'liensutiles.md'
+#    - '👨🏻‍💻 Présentation perso': 'APropos/index.md'
+    - '🔗 Liens utiles': 'APropos/liensutiles.md'
+#    - '🖥️ Configuration': 'APropos/config.md'
