@@ -60,7 +60,7 @@ Il faut aussi vérifier que BIOS = "OVMF (UEFI)" et que le controleur SCSI soit 
 !!! info
     Si les VM sont stockées sur un SSD, choisir "SSD emulation", ce qui permettra à :simple-windows11: Windows de comprendre que l'on utilise un SSD.
 
-Choisir "SCSI" dans Bus/Device, "Write back" dans cache (cela permet d'améliorer les performances) et "Discord" pour gérer le provisionnement dynamique.
+Choisir "SCSI" dans Bus/Device, "Write back" dans cache (cela permet d'améliorer les performances) et "Discard" pour gérer le provisionnement dynamique.
 
 <figure markdown="span">
   ![Choix HDD](./images/creationVM/05%20-%20configuration%20HDD.png){ width="500" }
