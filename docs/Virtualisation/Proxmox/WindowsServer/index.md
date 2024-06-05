@@ -128,3 +128,6 @@ Le pilote est désormais fonctionnel.
   ![Pilote fonctionnel](../Windows11/images/ajoutPilotespendantinstall/05%20-%20menu%20partitionnement.png){ width="500" }
 </figure>
 
+## Sources
+[Wiki Proxmox](https://pve.proxmox.com/wiki/Windows_2022_guest_best_practices)
+[jordanreedy.com](https://jordanreedy.com/installing-windows-server-2022-on-proxmox-ve/)
