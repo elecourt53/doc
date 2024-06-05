@@ -2,12 +2,6 @@
 icon: material/remote-desktop
 ---
 # Après l'installation (pilotes, activation RDP)
-## Ajout carte réseau
-Il faut selectionner la VM, cliquer sur "Hardware" puis "Add", "Network Device"
-Il faut choisir le modèle "VirtIO (paravirtualized)"
-<figure markdown="span">
-  ![Ajout carte réseau](./images/ajoutPilotesapresinstall/01%20-%20ajout%20carte%20réseau.png){ width="500" }
-</figure>
 
 ## Installation pilotes et du "guest-agent"
 !!! info
