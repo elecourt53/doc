@@ -85,14 +85,19 @@ nav:
 ##    - 📝 MkDocs:
 ##      - '🧑‍🏫 Présentation de MkDocs': 'Documentation/MkDocs/index.md'
 ##      - '🔧 Installation de MkDocs': 'Documentation/MkDocs/installation.md'
+
+  - Windows Server:
+    - Installation avec Proxmox: 'Virtualisation/Proxmox/WindowsServer/index.md'
+    - Active Directory:
+      - 'Création d un Active Directory': 'WindowsServer/AD/index.md'
+
   - Virtualisation:
     - Proxmox:
       - '🧑‍🏫 Présentation': 'Virtualisation/Proxmox/index.md'
       - '🔧 Installation': 'Virtualisation/Proxmox/installation.md'
-#      - '🔄 Mettre a jour': 'Virtualisation/Proxmox/majproxmox.md'
-#      - 📚 Cluster:
-#        - '🧑‍🏫 Présentation des clusters': 'Virtualisation/Proxmox/Cluster/index.md'
-#        - '🔧 Création d un cluster': 'Virtualisation/Proxmox/Cluster/creation.md'
+      - '🔄 Mises à jour': 'Virtualisation/Proxmox/majproxmox.md'
+      - 📚 Cluster:
+        - '🔧 Présentation et création d un cluster': 'Virtualisation/Proxmox/Cluster/index.md'
       - 🖥️ Windows 11:
         - 'Installation de Windows 11 sur Proxmox': 'Virtualisation/Proxmox/Windows11/installation.md'
         - 'Bypass Compte Microsoft': 'Virtualisation/Proxmox/Windows11/bypassmicrosoft.md'
