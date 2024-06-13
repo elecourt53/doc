@@ -19,4 +19,4 @@ Cela permet de mieux utiliser les composants du PC/serveur dans les machines vir
 
 ## Comment le télécharger et l'installer ?
 
-Il y a un tutoriel à [cet endroit](/Virtualisation/Proxmox/installation).
+Il y a un tutoriel à [cet endroit](./installation.md).

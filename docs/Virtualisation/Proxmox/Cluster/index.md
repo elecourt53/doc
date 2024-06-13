@@ -6,8 +6,11 @@ icon: simple/proxmox
 Un cluster permet de relier plusieurs machines physiques appelés (noeuds).
 
 Cela permet :
+
 - de gérer plusieurs serveurs physiques sur une seule interface,
+  
 - de migrer plus facilement des VM / conteneurs entre les noeuds (par exemple si un serveur doit être arrêté pour maintenance, les VM peuvent être migrées sur un autre serveur et donc les services présents seront disponibles.),
+  
 - d'avoir de la haute disponibilité (par exemple si un serveur tombe en panne, les VM seront transférées automatiquement sur un autre serveur du cluster.)
 
 ## Comment créer un cluster ?
