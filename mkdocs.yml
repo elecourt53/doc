@@ -46,7 +46,7 @@ plugins:
 extra:
   social:
     - icon: octicons/home-fill-24
-      link: https://elecourt53.github.io
+      link: https://elecourt53.fr
       name: Mes réseaux sociaux
     - icon: fontawesome/brands/github
       link: https://github.com/elecourt53
@@ -101,7 +101,7 @@ nav:
       - 🖥️ Windows 11:
         - 'Installation de Windows 11 sur Proxmox': 'Virtualisation/Proxmox/Windows11/installation.md'
         - 'Bypass Compte Microsoft': 'Virtualisation/Proxmox/Windows11/bypassmicrosoft.md'
-        - 'Après l installation (pilotes, activation RDP)': 'Virtualisation/Proxmox/Windows11/postinstallation.md'
+        - "Après l'installation (pilotes, activation RDP)": 'Virtualisation/Proxmox/Windows11/postinstallation.md'
       - 🖥️ Windows Server 2022:
         - 'Installation de Windows Server 2022 sur Proxmox': 'Virtualisation/Proxmox/WindowsServer/index.md'
         - "Après l'installation (pilotes, activation RDP)": 'Virtualisation/Proxmox/WindowsServer/postinstallation.md'

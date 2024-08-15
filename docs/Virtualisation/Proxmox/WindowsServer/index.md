@@ -54,7 +54,7 @@ Dans "Guest OS", il faut choisir :simple-windows10: Windows 11/2022/2025.
 ## 5 - Configuration du système
 Il faut activer le "qemu-agent", sélectionner "local-lvm" pour le stockage de l'EFI et sélectionner "local-lvm" pour le stockage de la puce TPM.
 
-Il faut aussi vérifier que BIOS = "OVMF (UEFI)" et que le controleur SCSI soit : "VirtIO SCSI" (attention il faudra installer le pilote plus tard).
+Il faut aussi vérifier que BIOS = "OVMF (UEFI)" et que le contrôleur SCSI soit : "VirtIO SCSI" (attention il faudra installer le pilote plus tard).
 
 <figure markdown="span">
   ![Choix OS](./Captures/creationVM/03%20-%20system.png){ width="500" }
