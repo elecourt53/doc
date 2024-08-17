@@ -46,7 +46,7 @@ plugins:
 extra:
   social:
     - icon: octicons/home-fill-24
-      link: https://elecourt53.fr
+      link: https://elecourt53.fr/
       name: Mes réseaux sociaux
     - icon: fontawesome/brands/github
       link: https://github.com/elecourt53
