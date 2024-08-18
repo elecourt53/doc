@@ -110,6 +110,9 @@ nav:
 #    - Réseau:
 #      - '🔧 Configuration réseau': 'Linux/Reseau/config.md'
 
+#  - Jellyfin:
+#    - '🧑‍🏫 Présentation': 'Jellyfin/index.md'
+
   - A propos:
 #    - '👨🏻‍💻 Présentation perso': 'APropos/index.md'
     - '🔗 Liens utiles': 'APropos/liensutiles.md'
