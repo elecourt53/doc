@@ -11,25 +11,21 @@
       
       
       
-        <link rel="prev" href="../../Cluster/">
       
       
-        <link rel="next" href="../bypassmicrosoft/">
-      
-      
-      <link rel="icon" href="../../../../assets/images/favicon.ico">
+      <link rel="icon" href="../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
     
     
       
-        <title>Installation de Windows 11 sur Proxmox - Documentation d'Etienne</title>
+        <title>Présentation de Jellyfin - Documentation d'Etienne</title>
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.6543a935.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -48,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,11 +53,11 @@
       
         <meta  property="og:type"  content="website" >
       
-        <meta  property="og:title"  content="Installation de Windows 11 sur Proxmox - Documentation d'Etienne" >
+        <meta  property="og:title"  content="Présentation de Jellyfin - Documentation d'Etienne" >
       
         <meta  property="og:description"  content="Documentation d'Etienne sur des logiciels et du matériel." >
       
-        <meta  property="og:image"  content="./assets/images/social/Virtualisation/Proxmox/Windows11/installation.png" >
+        <meta  property="og:image"  content="./assets/images/social/Jellyfin/index.png" >
       
         <meta  property="og:image:type"  content="image/png" >
       
@@ -73,15 +69,15 @@
       
         <meta  name="twitter:card"  content="summary_large_image" >
       
-        <meta  name="twitter:title"  content="Installation de Windows 11 sur Proxmox - Documentation d'Etienne" >
+        <meta  name="twitter:title"  content="Présentation de Jellyfin - Documentation d'Etienne" >
       
         <meta  name="twitter:description"  content="Documentation d'Etienne sur des logiciels et du matériel." >
       
-        <meta  name="twitter:image"  content="./assets/images/social/Virtualisation/Proxmox/Windows11/installation.png" >
+        <meta  name="twitter:image"  content="./assets/images/social/Jellyfin/index.png" >
       
     
     
-   <link href="../../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
     html.glightbox-open { overflow: initial; height: 100%; }
     .gslide-title { margin-top: 0px; user-select: text; }
     .gslide-desc { color: #666; user-select: text; }
@@ -90,7 +86,7 @@
     .gdesc-inner { font-size: 0.75rem; }
     body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
     body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../../assets/javascripts/glightbox.min.js"></script></head>
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
   
   
     
@@ -109,7 +105,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#1-telecharger-liso-et-ajout-a-proxmox" class="md-skip">
+        <a href="#presentation-de-jellyfin" class="md-skip">
           Aller au contenu
         </a>
       
@@ -125,9 +121,9 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
-    <a href="../../../.." title="Documentation d&#39;Etienne" class="md-header__button md-logo" aria-label="Documentation d'Etienne" data-md-component="logo">
+    <a href=".." title="Documentation d&#39;Etienne" class="md-header__button md-logo" aria-label="Documentation d'Etienne" data-md-component="logo">
       
-  <img src="../../../../assets/images/perso.png" alt="logo">
+  <img src="../assets/images/perso.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -144,7 +140,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Installation de Windows 11 sur Proxmox
+              Présentation de Jellyfin
             
           </span>
         </div>
@@ -259,9 +255,9 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../../.." title="Documentation d&#39;Etienne" class="md-nav__button md-logo" aria-label="Documentation d'Etienne" data-md-component="logo">
+    <a href=".." title="Documentation d&#39;Etienne" class="md-nav__button md-logo" aria-label="Documentation d'Etienne" data-md-component="logo">
       
-  <img src="../../../../assets/images/perso.png" alt="logo">
+  <img src="../assets/images/perso.png" alt="logo">
 
     </a>
     Documentation d'Etienne
@@ -288,7 +284,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -348,7 +344,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../WindowsServer/" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/WindowsServer/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.449 9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
@@ -408,7 +404,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../WindowsServer/AD/" class="md-nav__link">
+      <a href="../WindowsServer/AD/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.449 9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
@@ -443,8 +439,6 @@
       
   
   
-    
-  
   
   
     
@@ -456,11 +450,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
         
           
           <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
@@ -474,7 +468,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             Virtualisation
@@ -485,8 +479,6 @@
                 
   
   
-    
-  
   
   
     
@@ -495,11 +487,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
         
           
           <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
@@ -513,7 +505,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1">
             <span class="md-nav__icon md-icon"></span>
             Proxmox
@@ -527,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.928 1.825c-1.09.553-1.09.64-.07 1.78 5.655 6.295 7.004 7.782 7.107 7.782.139.017 7.971-8.542 8.058-8.801.034-.07-.208-.312-.519-.536-.415-.312-.864-.433-1.712-.467-1.59-.104-2.144.242-4.115 2.455-.899 1.003-1.66 1.833-1.66 1.833-.017 0-.76-.813-1.642-1.798S8.473 2.1 8.127 1.91c-.796-.45-2.421-.484-3.2-.086zM1.297 4.367C.45 4.695 0 5.007 0 5.248c0 .121 1.331 1.678 2.94 3.459 1.625 1.78 2.939 3.268 2.939 3.302 0 .035-1.331 1.522-2.94 3.303C1.314 17.11.017 18.683.035 18.822c.086.467 1.504 1.055 2.541 1.055 1.678-.018 2.058-.312 5.603-4.202 1.78-1.954 3.233-3.614 3.233-3.666 0-.069-1.435-1.694-3.199-3.63-2.3-2.508-3.423-3.632-3.96-3.874-.812-.398-2.126-.467-2.956-.138zm18.467.12c-.502.26-1.764 1.505-3.943 3.891-1.763 1.937-3.199 3.562-3.199 3.631 0 .07 1.453 1.712 3.234 3.666 3.544 3.89 3.925 4.184 5.602 4.202 1.038 0 2.455-.588 2.542-1.055.017-.156-1.28-1.712-2.905-3.493-1.608-1.78-2.94-3.285-2.94-3.32 0-.034 1.332-1.539 2.94-3.32C22.72 6.91 24.017 5.352 24 5.214c-.087-.45-1.366-.968-2.473-1.038-.795-.034-1.21.035-1.763.312zM7.954 16.973c-2.144 2.369-3.908 4.374-3.943 4.46-.034.07.208.312.52.537.414.311.864.432 1.711.467 1.574.103 2.161-.26 4.15-2.508.864-.968 1.608-1.78 1.625-1.78s.761.812 1.643 1.798c2.023 2.248 2.559 2.576 4.132 2.49.848-.035 1.297-.156 1.712-.467.311-.225.553-.467.519-.536-.087-.26-7.92-8.819-8.058-8.801-.069 0-1.867 1.954-4.011 4.34z"/></svg>
@@ -550,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../installation/" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/installation/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.928 1.825c-1.09.553-1.09.64-.07 1.78 5.655 6.295 7.004 7.782 7.107 7.782.139.017 7.971-8.542 8.058-8.801.034-.07-.208-.312-.519-.536-.415-.312-.864-.433-1.712-.467-1.59-.104-2.144.242-4.115 2.455-.899 1.003-1.66 1.833-1.66 1.833-.017 0-.76-.813-1.642-1.798S8.473 2.1 8.127 1.91c-.796-.45-2.421-.484-3.2-.086zM1.297 4.367C.45 4.695 0 5.007 0 5.248c0 .121 1.331 1.678 2.94 3.459 1.625 1.78 2.939 3.268 2.939 3.302 0 .035-1.331 1.522-2.94 3.303C1.314 17.11.017 18.683.035 18.822c.086.467 1.504 1.055 2.541 1.055 1.678-.018 2.058-.312 5.603-4.202 1.78-1.954 3.233-3.614 3.233-3.666 0-.069-1.435-1.694-3.199-3.63-2.3-2.508-3.423-3.632-3.96-3.874-.812-.398-2.126-.467-2.956-.138zm18.467.12c-.502.26-1.764 1.505-3.943 3.891-1.763 1.937-3.199 3.562-3.199 3.631 0 .07 1.453 1.712 3.234 3.666 3.544 3.89 3.925 4.184 5.602 4.202 1.038 0 2.455-.588 2.542-1.055.017-.156-1.28-1.712-2.905-3.493-1.608-1.78-2.94-3.285-2.94-3.32 0-.034 1.332-1.539 2.94-3.32C22.72 6.91 24.017 5.352 24 5.214c-.087-.45-1.366-.968-2.473-1.038-.795-.034-1.21.035-1.763.312zM7.954 16.973c-2.144 2.369-3.908 4.374-3.943 4.46-.034.07.208.312.52.537.414.311.864.432 1.711.467 1.574.103 2.161-.26 4.15-2.508.864-.968 1.608-1.78 1.625-1.78s.761.812 1.643 1.798c2.023 2.248 2.559 2.576 4.132 2.49.848-.035 1.297-.156 1.712-.467.311-.225.553-.467.519-.536-.087-.26-7.92-8.819-8.058-8.801-.069 0-1.867 1.954-4.011 4.34z"/></svg>
@@ -573,7 +565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../majproxmox/" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/majproxmox/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.928 1.825c-1.09.553-1.09.64-.07 1.78 5.655 6.295 7.004 7.782 7.107 7.782.139.017 7.971-8.542 8.058-8.801.034-.07-.208-.312-.519-.536-.415-.312-.864-.433-1.712-.467-1.59-.104-2.144.242-4.115 2.455-.899 1.003-1.66 1.833-1.66 1.833-.017 0-.76-.813-1.642-1.798S8.473 2.1 8.127 1.91c-.796-.45-2.421-.484-3.2-.086zM1.297 4.367C.45 4.695 0 5.007 0 5.248c0 .121 1.331 1.678 2.94 3.459 1.625 1.78 2.939 3.268 2.939 3.302 0 .035-1.331 1.522-2.94 3.303C1.314 17.11.017 18.683.035 18.822c.086.467 1.504 1.055 2.541 1.055 1.678-.018 2.058-.312 5.603-4.202 1.78-1.954 3.233-3.614 3.233-3.666 0-.069-1.435-1.694-3.199-3.63-2.3-2.508-3.423-3.632-3.96-3.874-.812-.398-2.126-.467-2.956-.138zm18.467.12c-.502.26-1.764 1.505-3.943 3.891-1.763 1.937-3.199 3.562-3.199 3.631 0 .07 1.453 1.712 3.234 3.666 3.544 3.89 3.925 4.184 5.602 4.202 1.038 0 2.455-.588 2.542-1.055.017-.156-1.28-1.712-2.905-3.493-1.608-1.78-2.94-3.285-2.94-3.32 0-.034 1.332-1.539 2.94-3.32C22.72 6.91 24.017 5.352 24 5.214c-.087-.45-1.366-.968-2.473-1.038-.795-.034-1.21.035-1.763.312zM7.954 16.973c-2.144 2.369-3.908 4.374-3.943 4.46-.034.07.208.312.52.537.414.311.864.432 1.711.467 1.574.103 2.161-.26 4.15-2.508.864-.968 1.608-1.78 1.625-1.78s.761.812 1.643 1.798c2.023 2.248 2.559 2.576 4.132 2.49.848-.035 1.297-.156 1.712-.467.311-.225.553-.467.519-.536-.087-.26-7.92-8.819-8.058-8.801-.069 0-1.867 1.954-4.011 4.34z"/></svg>
@@ -633,7 +625,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../Cluster/" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/Cluster/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4.928 1.825c-1.09.553-1.09.64-.07 1.78 5.655 6.295 7.004 7.782 7.107 7.782.139.017 7.971-8.542 8.058-8.801.034-.07-.208-.312-.519-.536-.415-.312-.864-.433-1.712-.467-1.59-.104-2.144.242-4.115 2.455-.899 1.003-1.66 1.833-1.66 1.833-.017 0-.76-.813-1.642-1.798S8.473 2.1 8.127 1.91c-.796-.45-2.421-.484-3.2-.086zM1.297 4.367C.45 4.695 0 5.007 0 5.248c0 .121 1.331 1.678 2.94 3.459 1.625 1.78 2.939 3.268 2.939 3.302 0 .035-1.331 1.522-2.94 3.303C1.314 17.11.017 18.683.035 18.822c.086.467 1.504 1.055 2.541 1.055 1.678-.018 2.058-.312 5.603-4.202 1.78-1.954 3.233-3.614 3.233-3.666 0-.069-1.435-1.694-3.199-3.63-2.3-2.508-3.423-3.632-3.96-3.874-.812-.398-2.126-.467-2.956-.138zm18.467.12c-.502.26-1.764 1.505-3.943 3.891-1.763 1.937-3.199 3.562-3.199 3.631 0 .07 1.453 1.712 3.234 3.666 3.544 3.89 3.925 4.184 5.602 4.202 1.038 0 2.455-.588 2.542-1.055.017-.156-1.28-1.712-2.905-3.493-1.608-1.78-2.94-3.285-2.94-3.32 0-.034 1.332-1.539 2.94-3.32C22.72 6.91 24.017 5.352 24 5.214c-.087-.45-1.366-.968-2.473-1.038-.795-.034-1.21.035-1.763.312zM7.954 16.973c-2.144 2.369-3.908 4.374-3.943 4.46-.034.07.208.312.52.537.414.311.864.432 1.711.467 1.574.103 2.161-.26 4.15-2.508.864-.968 1.608-1.78 1.625-1.78s.761.812 1.643 1.798c2.023 2.248 2.559 2.576 4.132 2.49.848-.035 1.297-.156 1.712-.467.311-.225.553-.467.519-.536-.087-.26-7.92-8.819-8.058-8.801-.069 0-1.867 1.954-4.011 4.34z"/></svg>
@@ -661,8 +653,6 @@
                 
   
   
-    
-  
   
   
     
@@ -671,11 +661,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1_5" >
         
           
           <label class="md-nav__link" for="__nav_3_1_5" id="__nav_3_1_5_label" tabindex="0">
@@ -689,7 +679,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_3_1_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_1_5">
             <span class="md-nav__icon md-icon"></span>
             🖥️ Windows 11
@@ -700,30 +690,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg>
-  
-  <span class="md-ellipsis">
-    Installation de Windows 11 sur Proxmox
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Virtualisation/Proxmox/Windows11/installation/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg>
@@ -734,141 +704,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-telecharger-liso-et-ajout-a-proxmox" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 - Télécharger l'ISO et ajout à Proxmox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-telecharger-les-pilotes-et-ajout-au-serveur" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 - Télécharger les pilotes et ajout au serveur
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-creation-dune-vm" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 - Création d'une VM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-choix-du-systeme-dexploitation-ajout-de-liso" class="md-nav__link">
-    <span class="md-ellipsis">
-      4 - Choix du système d'exploitation (ajout de l'ISO)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-configuration-du-systeme" class="md-nav__link">
-    <span class="md-ellipsis">
-      5 - Configuration du système
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-configuration-des-disques-durs" class="md-nav__link">
-    <span class="md-ellipsis">
-      6 - Configuration des disques durs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-configuration-cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      7 - Configuration CPU
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-configuration-ram" class="md-nav__link">
-    <span class="md-ellipsis">
-      8 - Configuration RAM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-configuration-carte-reseau" class="md-nav__link">
-    <span class="md-ellipsis">
-      9 - Configuration carte réseau
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-ajout-des-pilotes-lors-du-partitionnement-des-disques" class="md-nav__link">
-    <span class="md-ellipsis">
-      10 - Ajout des pilotes lors du partitionnement des disques.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11-bypass-compte-microsoft" class="md-nav__link">
-    <span class="md-ellipsis">
-      11 - Bypass Compte Microsoft
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12-apres-linstallation" class="md-nav__link">
-    <span class="md-ellipsis">
-      12 - Après l'installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sources
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -881,7 +716,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../bypassmicrosoft/" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/Windows11/bypassmicrosoft/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0v11.408h11.408V0zm12.594 0v11.408H24V0zM0 12.594V24h11.408V12.594zm12.594 0V24H24V12.594z"/></svg>
@@ -904,7 +739,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../postinstallation/" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/Windows11/postinstallation/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2M3 4h18v12H3M15 5l-3.5 3.5L15 12l1.4-1.4-2.1-2.1 2.1-2.1M9 8 7.6 9.4l2.1 2.1-2.1 2.1L9 15l3.5-3.5"/></svg>
@@ -972,7 +807,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../WindowsServer/" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/WindowsServer/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 3.449 9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
@@ -995,7 +830,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../WindowsServer/postinstallation/" class="md-nav__link">
+      <a href="../Virtualisation/Proxmox/WindowsServer/postinstallation/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v2H8v2h8v-2h-2v-2h7a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2M3 4h18v12H3M15 5l-3.5 3.5L15 12l1.4-1.4-2.1-2.1 2.1-2.1M9 8 7.6 9.4l2.1 2.1-2.1 2.1L9 15l3.5-3.5"/></svg>
@@ -1081,7 +916,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../APropos/liensutiles/" class="md-nav__link">
+      <a href="../APropos/liensutiles/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1119,131 +954,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table des matières
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#1-telecharger-liso-et-ajout-a-proxmox" class="md-nav__link">
-    <span class="md-ellipsis">
-      1 - Télécharger l'ISO et ajout à Proxmox
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-telecharger-les-pilotes-et-ajout-au-serveur" class="md-nav__link">
-    <span class="md-ellipsis">
-      2 - Télécharger les pilotes et ajout au serveur
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-creation-dune-vm" class="md-nav__link">
-    <span class="md-ellipsis">
-      3 - Création d'une VM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-choix-du-systeme-dexploitation-ajout-de-liso" class="md-nav__link">
-    <span class="md-ellipsis">
-      4 - Choix du système d'exploitation (ajout de l'ISO)
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-configuration-du-systeme" class="md-nav__link">
-    <span class="md-ellipsis">
-      5 - Configuration du système
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#6-configuration-des-disques-durs" class="md-nav__link">
-    <span class="md-ellipsis">
-      6 - Configuration des disques durs
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#7-configuration-cpu" class="md-nav__link">
-    <span class="md-ellipsis">
-      7 - Configuration CPU
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#8-configuration-ram" class="md-nav__link">
-    <span class="md-ellipsis">
-      8 - Configuration RAM
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#9-configuration-carte-reseau" class="md-nav__link">
-    <span class="md-ellipsis">
-      9 - Configuration carte réseau
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#10-ajout-des-pilotes-lors-du-partitionnement-des-disques" class="md-nav__link">
-    <span class="md-ellipsis">
-      10 - Ajout des pilotes lors du partitionnement des disques.
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#11-bypass-compte-microsoft" class="md-nav__link">
-    <span class="md-ellipsis">
-      11 - Bypass Compte Microsoft
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#12-apres-linstallation" class="md-nav__link">
-    <span class="md-ellipsis">
-      12 - Après l'installation
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sources" class="md-nav__link">
-    <span class="md-ellipsis">
-      Sources
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1261,118 +973,7 @@
   
 
 
-  <h1>Installation de Windows 11 sur Proxmox</h1>
-
-<h2 id="1-telecharger-liso-et-ajout-a-proxmox">1 - Télécharger l'ISO et ajout à Proxmox</h2>
-<p><a href="https://www.microsoft.com/fr-fr/software-download/windows11">Télécharger l'ISO de <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg></span> Windows 11 ici</a></p>
-<p>Pour l'ajouter au serveur, il faut :</p>
-<ul>
-<li>Cliquer sur <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M9 5h1V3H9v2m0 8h1v-2H9v2m0 8h1v-2H9v2M5 3v2h2V3H5m0 8v2h2v-2H5m0 8v2h2v-2H5Z"/></svg></span> Datacenter -&gt; le nom du serveur (pve01 ou 02), -&gt; local -&gt; ISO images -&gt; Upload</li>
-</ul>
-<p>Après il faut sélectionner le fichier ISO et cliquer sur upload.</p>
-<h2 id="2-telecharger-les-pilotes-et-ajout-au-serveur">2 - Télécharger les pilotes et ajout au serveur</h2>
-<p><a href="https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso">Télécharger les pilotes</a></p>
-<p>Pour ajouter l'ISO des pilotes au serveur, comme pour l'ISO <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg></span> Windows 11, il faut :</p>
-<ul>
-<li>Cliquer sur <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 1h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1m0 8h16a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1M9 5h1V3H9v2m0 8h1v-2H9v2m0 8h1v-2H9v2M5 3v2h2V3H5m0 8v2h2v-2H5m0 8v2h2v-2H5Z"/></svg></span> Datacenter -&gt; le nom du serveur (pve01 ou 02), -&gt; local -&gt; ISO images -&gt; Upload</li>
-</ul>
-<p>Après il faut sélectionner le fichier ISO et cliquer sur upload.</p>
-<h2 id="3-creation-dune-vm">3 - Création d'une VM</h2>
-<p>Il faut aller sur le bouton "Create VM" situé en haut à droite.</p>
-<figure>
-  <a class="glightbox" href="../images/creationVM/01%20-%20cr%C3%A9ation%20VM%20bouton.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Bouton &quot;Create VM&quot;" src="../images/creationVM/01%20-%20cr%C3%A9ation%20VM%20bouton.png" width="500" /></a>
-</figure>
-<p>Donner un nom à la VM et choisir le serveur physique du cluster (si on en a un).</p>
-<figure>
-  <a class="glightbox" href="../images/creationVM/02%20-%20nom%20vm.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Nom VM et cluster" src="../images/creationVM/02%20-%20nom%20vm.png" width="500" /></a>
-</figure>
-<h2 id="4-choix-du-systeme-dexploitation-ajout-de-liso">4 - Choix du système d'exploitation (ajout de l'ISO)</h2>
-<div class="admonition warning">
-<p class="admonition-title">Attention !!</p>
-<p>Il faut aussi ajouter l'ISO des pilotes pour <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg></span> Windows</p>
-<ul>
-<li>Cliquer sur "Add additional drive for VirtIO drivers" puis choisir l'ISO des pilotes</li>
-</ul>
-<p>Sur l'image ci-dessous les pilotes sont sélectionnés.</p>
-</div>
-<p>Dans "Guest OS", il faut choisir <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg></span> Windows 11.</p>
-<figure>
-  <a class="glightbox" href="../images/creationVM/03%20-%20choix%20OS.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Choix OS" src="../images/creationVM/03%20-%20choix%20OS.png" width="500" /></a>
-</figure>
-<h2 id="5-configuration-du-systeme">5 - Configuration du système</h2>
-<p>Il faut activer le "qemu-agent", sélectionner "local-lvm" pour le stockage de l'EFI et sélectionner "local-lvm" pour le stockage de la puce TPM.</p>
-<p>Il faut aussi vérifier que BIOS = "OVMF (UEFI)" et que le contrôleur SCSI soit : "VirtIO SCSI" (attention il faudra installer le pilote plus tard).</p>
-<figure>
-  <a class="glightbox" href="../images/creationVM/04%20-%20configuration%20syst%C3%A8me.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Choix OS" src="../images/creationVM/04%20-%20configuration%20syst%C3%A8me.png" width="500" /></a>
-</figure>
-<h2 id="6-configuration-des-disques-durs">6 - Configuration des disques durs</h2>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Si les VM sont stockées sur un SSD, choisir "SSD emulation", ce qui permettra à <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg></span> Windows de comprendre que l'on utilise un SSD.</p>
-</div>
-<p>Choisir "SCSI" dans Bus/Device, "Write back" dans cache (cela permet d'améliorer les performances) et "Discard" pour gérer le provisionnement dynamique.</p>
-<figure>
-  <a class="glightbox" href="../images/creationVM/05%20-%20configuration%20HDD.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Choix HDD" src="../images/creationVM/05%20-%20configuration%20HDD.png" width="500" /></a>
-</figure>
-<h2 id="7-configuration-cpu">7 - Configuration CPU</h2>
-<p>Choisir le nombre de coeurs dans "Cores", dans "Type" choisir dans la liste le dernier choix "Host".</p>
-<figure>
-  <a class="glightbox" href="../images/creationVM/06%20-%20configuration%20CPU.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Configuration CPU" src="../images/creationVM/06%20-%20configuration%20CPU.png" width="500" /></a>
-</figure>
-<h2 id="8-configuration-ram">8 - Configuration RAM</h2>
-<p>Choisir le nombre de Go de RAM pour la VM.</p>
-<figure>
-  <a class="glightbox" href="../images/creationVM/07%20-%20configuration%20RAM.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Configuration RAM" src="../images/creationVM/07%20-%20configuration%20RAM.png" width="500" /></a>
-</figure>
-<h2 id="9-configuration-carte-reseau">9 - Configuration carte réseau</h2>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<ul>
-<li>
-<p>Il faut désactiver la carte réseau pour que <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg></span> Windows n'oblige pas à se connecter avec un compte Microsoft.</p>
-</li>
-<li>
-<p>La carte réseau sera réactivée plus tard.</p>
-</li>
-</ul>
-</div>
-<figure>
-  <a class="glightbox" href="../images/creationVM/08%20-%20configuration%20carte%20r%C3%A9seau.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Configuration carte réseau" src="../images/creationVM/08%20-%20configuration%20carte%20r%C3%A9seau.png" width="500" /></a>
-</figure>
-<h2 id="10-ajout-des-pilotes-lors-du-partitionnement-des-disques">10 - Ajout des pilotes lors du partitionnement des disques.</h2>
-<p>Lancer l'installation de <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M0 0h11.377v11.372H0Zm12.623 0H24v11.372H12.623ZM0 12.623h11.377V24H0Zm12.623 0H24V24H12.623"/></svg></span> Windows, au moment du partionnement des disques, il va falloir installer les pilotes.</p>
-<figure>
-  <a class="glightbox" href="../images/ajoutPilotespendantinstall/01%20-%20probleme%20pendant%20install.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Menu partitionnement disque" src="../images/ajoutPilotespendantinstall/01%20-%20probleme%20pendant%20install.png" width="500" /></a>
-</figure>
-<p>Cliquer sur "Charger un pilote".</p>
-<figure>
-  <a class="glightbox" href="../images/ajoutPilotespendantinstall/02%20-%20menu%20charger%20un%20pilote.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Menu charger un pilote" src="../images/ajoutPilotespendantinstall/02%20-%20menu%20charger%20un%20pilote.png" width="500" /></a>
-</figure>
-<p>Cliquer sur "Parcourir", puis D:, "amd64" et "w11" et cliquer sur OK.</p>
-<figure>
-  <a class="glightbox" href="../images/ajoutPilotespendantinstall/03%20-%20menu%20parcourir.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Menu parcourir" src="../images/ajoutPilotespendantinstall/03%20-%20menu%20parcourir.png" width="500" /></a>
-</figure>
-<p>Sélectionner le pilote fonctionnant avec la VM.</p>
-<figure>
-  <a class="glightbox" href="../images/ajoutPilotespendantinstall/04%20-%20choix%20pilote.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Sélection pilote" src="../images/ajoutPilotespendantinstall/04%20-%20choix%20pilote.png" width="500" /></a>
-</figure>
-<p>Le pilote est désormais fonctionnel.</p>
-<figure>
-  <a class="glightbox" href="../images/ajoutPilotespendantinstall/05%20-%20menu%20partitionnement.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="Pilote fonctionnel" src="../images/ajoutPilotespendantinstall/05%20-%20menu%20partitionnement.png" width="500" /></a>
-</figure>
-<h2 id="11-bypass-compte-microsoft">11 - Bypass Compte Microsoft</h2>
-<p>Si au démarrage du PC, il est demandé de se connecter à un compte Microsoft, voir <a href="../bypassmicrosoft/">cette page</a></p>
-<h2 id="12-apres-linstallation">12 - Après l'installation</h2>
-<p>Pour installer les pilotes réseaux et le RDP, voir <a href="../postinstallation/">cette page</a></p>
-<h2 id="sources">Sources</h2>
-<ul>
-<li>
-<p><a href="https://technonagib.fr/virtualiser-windows-11-proxmox-ve/">technonagib.fr</a></p>
-</li>
-<li>
-<p><a href="https://florianmuller.com/install-windows-11-on-proxmox-7-0-13-with-tpm-2-0-chip-emulation">florianmuller.com</a></p>
-</li>
-</ul>
+<h1 id="presentation-de-jellyfin">Présentation de Jellyfin</h1>
 
 
 
@@ -1395,7 +996,7 @@
     <span class="md-icon" title="Dernière mise à jour">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">15 août 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">18 août 2024</span>
   </span>
 
     
@@ -1405,7 +1006,7 @@
     <span class="md-icon" title="Créé">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3h-2Z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">4 juin 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">18 août 2024</span>
   </span>
 
     
@@ -1510,10 +1111,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../../..", "features": ["navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.sections", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../assets/javascripts/bundle.081f42fc.min.js"></script>
       
     
   <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
