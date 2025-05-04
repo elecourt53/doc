@@ -1,4 +1,5 @@
 site_name: Documentation d'Etienne
+site_url: https://doc.elecourt53.fr
 site_description: Documentation d'Etienne sur des logiciels et du matériel.
 repo_url: https://github.com/elecourt53/doc
 edit_uri: edit/main/docs/
@@ -77,7 +78,7 @@ markdown_extensions:
   - md_in_html
 
 copyright: |
-  &copy; 2024 <a href="https://github.com/elecourt53"  target="_blank" rel="noopener">Etienne</a>
+  &copy; 2024 - <script>document.write(new Date().getFullYear())</script> <a href="https://github.com/elecourt53"  target="_blank" rel="noopener">Etienne</a>
 
 nav:
   - 🏠 Page d'accueil: 'index.md'
@@ -112,6 +113,8 @@ nav:
 
 #  - Jellyfin:
 #    - '🧑‍🏫 Présentation': 'Jellyfin/index.md'
+  - Audio:
+    - "Lire des fichiers provenant d'un SACD (.dsf) sur Windows": 'Audio/SACD/index.md'
 
   - A propos:
 #    - '👨🏻‍💻 Présentation perso': 'APropos/index.md'

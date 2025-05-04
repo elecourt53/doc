@@ -1,14 +1,14 @@
 ---
-icon: fontawesome/brands/windows
+icon: simple/windows10
 ---
 # Installation de Windows Server 2022 sur Proxmox
 
 Il est simple d'installer un serveur Windows sur Proxmox.
 
-L'installation est similaire à celle de [:material-microsoft: Windows 11](../Windows11/installation.md).
+L'installation est similaire à celle de [:simple-windows11: Windows 11](.._Windows11_installation.md).
 
 ## 1 - Télécharger l'ISO et ajout à Proxmox
-[Télécharger l'ISO de :fontawesome-brands-windows: Windows Server ici](https://software-static.download.prss.microsoft.com/sg/download/20348.169.210806-2348.fe_release_svc_refresh_SERVER_EVAL_x64FRE_fr-fr.iso)
+[Télécharger l'ISO de :simple-windows10: Windows Server ici](https://software-static.download.prss.microsoft.com/sg/download/20348.169.210806-2348.fe_release_svc_refresh_SERVER_EVAL_x64FRE_fr-fr.iso)
 
 Pour l'ajouter au serveur, il faut :
 
@@ -19,7 +19,7 @@ Après il faut sélectionner le fichier ISO et cliquer sur upload.
 ## 2 - Télécharger les pilotes et ajout au serveur
 [Télécharger les pilotes](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso)
 
-Pour ajouter l'ISO des pilotes au serveur, comme pour l'ISO :fontawesome-brands-windows: Windows Server, il faut :
+Pour ajouter l'ISO des pilotes au serveur, comme pour l'ISO :simple-windows10: Windows Server, il faut :
 
 - Cliquer sur :material-server: Datacenter -> le nom du serveur (pve01 ou 02), -> local -> ISO images -> Upload
 
@@ -39,13 +39,13 @@ Il faut aller sur le bouton "Create VM" situé en haut à droite.
 ## 4 - Choix du système d'exploitation (ajout de l'ISO)
 
 !!! warning "Attention !!"
-    Il faut aussi ajouter l'ISO des pilotes pour :fontawesome-brands-windows: Windows
+    Il faut aussi ajouter l'ISO des pilotes pour :simple-windows10: Windows
 
     - Cliquer sur "Add additional drive for VirtIO drivers" puis choisir l'ISO des pilotes
 
     Sur l'image ci-dessous les pilotes sont sélectionnés.
 
-Dans "Guest OS", il faut choisir :fontawesome-brands-windows: Windows 11/2022/2025.
+Dans "Guest OS", il faut choisir :simple-windows10: Windows 11/2022/2025.
 
 <figure markdown="span">
   ![Choix OS](./Captures/creationVM/02%20-%20choix%20iso.png){ width="500" }
@@ -92,7 +92,7 @@ Sélectionner VirtIO (paravirtualized) dans le modèle.
 </figure>
 
 ## 10 - Ajout des pilotes lors du partitionnement des disques.
-Lancer l'installation de :fontawesome-brands-windows: Windows, puis choisir la version que l'on souhaite j'ai sélectionné la Standard avec Expérience du Bureau pour avoir une interface graphique.
+Lancer l'installation de :simple-windows10: Windows, puis choisir la version que l'on souhaite j'ai sélectionné la Standard avec Expérience du Bureau pour avoir une interface graphique.
 
 <figure markdown="span">
   ![Menu édition Windows](./Captures/installWindows/01%20-%20edition.png){ width="500" }
@@ -129,5 +129,5 @@ Le pilote est désormais fonctionnel.
 </figure>
 
 ## Sources
-- [Wiki Proxmox](https://pve.proxmox.com/wiki/Windows_2022_guest_best_practices)
-- [jordanreedy.com](https://jordanreedy.com/installing-windows-server-2022-on-proxmox-ve/)
+[Wiki Proxmox](https://pve.proxmox.com/wiki/Windows_2022_guest_best_practices)
+[jordanreedy.com](https://jordanreedy.com/installing-windows-server-2022-on-proxmox-ve/)

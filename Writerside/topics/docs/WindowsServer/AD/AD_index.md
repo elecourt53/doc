@@ -1,5 +1,5 @@
 ---
-icon: fontawesome/brands/windows
+icon: simple/windows10
 ---
 # Création d'un Active Directory
 

@@ -1,8 +1,8 @@
 ---
-icon: material/microsoft
+icon: simple/windows11
 ---
 ## 1 - Télécharger l'ISO et ajout à Proxmox
-[Télécharger l'ISO de :material-microsoft: Windows 11 ici](https://www.microsoft.com/fr-fr/software-download/windows11)
+[Télécharger l'ISO de :simple-windows11: Windows 11 ici](https://www.microsoft.com/fr-fr/software-download/windows11)
 
 Pour l'ajouter au serveur, il faut :
 
@@ -13,7 +13,7 @@ Après il faut sélectionner le fichier ISO et cliquer sur upload.
 ## 2 - Télécharger les pilotes et ajout au serveur
 [Télécharger les pilotes](https://fedorapeople.org/groups/virt/virtio-win/direct-downloads/latest-virtio/virtio-win.iso)
 
-Pour ajouter l'ISO des pilotes au serveur, comme pour l'ISO :material-microsoft: Windows 11, il faut :
+Pour ajouter l'ISO des pilotes au serveur, comme pour l'ISO :simple-windows11: Windows 11, il faut :
 
 - Cliquer sur :material-server: Datacenter -> le nom du serveur (pve01 ou 02), -> local -> ISO images -> Upload
 
@@ -35,13 +35,13 @@ Donner un nom à la VM et choisir le serveur physique du cluster (si on en a un)
 ## 4 - Choix du système d'exploitation (ajout de l'ISO)
 
 !!! warning "Attention !!"
-    Il faut aussi ajouter l'ISO des pilotes pour :material-microsoft: Windows
+    Il faut aussi ajouter l'ISO des pilotes pour :simple-windows11: Windows
 
     - Cliquer sur "Add additional drive for VirtIO drivers" puis choisir l'ISO des pilotes
 
     Sur l'image ci-dessous les pilotes sont sélectionnés.
 
-Dans "Guest OS", il faut choisir :material-microsoft: Windows 11.
+Dans "Guest OS", il faut choisir :simple-windows11: Windows 11.
 
 <figure markdown="span">
   ![Choix OS](./images/creationVM/03%20-%20choix%20OS.png){ width="500" }
@@ -58,7 +58,7 @@ Il faut aussi vérifier que BIOS = "OVMF (UEFI)" et que le contrôleur SCSI soit
 
 ## 6 - Configuration des disques durs
 !!! info
-    Si les VM sont stockées sur un SSD, choisir "SSD emulation", ce qui permettra à :material-microsoft: Windows de comprendre que l'on utilise un SSD.
+    Si les VM sont stockées sur un SSD, choisir "SSD emulation", ce qui permettra à :simple-windows11: Windows de comprendre que l'on utilise un SSD.
 
 Choisir "SCSI" dans Bus/Device, "Write back" dans cache (cela permet d'améliorer les performances) et "Discard" pour gérer le provisionnement dynamique.
 
@@ -81,7 +81,7 @@ Choisir le nombre de Go de RAM pour la VM.
 
 ## 9 - Configuration carte réseau
 !!! info
-    - Il faut désactiver la carte réseau pour que :material-microsoft: Windows n'oblige pas à se connecter avec un compte Microsoft.
+    - Il faut désactiver la carte réseau pour que :simple-windows11: Windows n'oblige pas à se connecter avec un compte Microsoft.
     
     - La carte réseau sera réactivée plus tard.
 <figure markdown="span">
@@ -89,7 +89,7 @@ Choisir le nombre de Go de RAM pour la VM.
 </figure>
 
 ## 10 - Ajout des pilotes lors du partitionnement des disques.
-Lancer l'installation de :material-microsoft: Windows, au moment du partionnement des disques, il va falloir installer les pilotes.
+Lancer l'installation de :simple-windows11: Windows, au moment du partionnement des disques, il va falloir installer les pilotes.
 
 <figure markdown="span">
   ![Menu partitionnement disque](./images/ajoutPilotespendantinstall/01%20-%20probleme%20pendant%20install.png){ width="500" }
@@ -120,10 +120,10 @@ Le pilote est désormais fonctionnel.
 </figure>
 
 ## 11 - Bypass Compte Microsoft
-Si au démarrage du PC, il est demandé de se connecter à un compte Microsoft, voir [cette page](./bypassmicrosoft.md)
+Si au démarrage du PC, il est demandé de se connecter à un compte Microsoft, voir [cette page](._bypassmicrosoft.md)
 
 ## 12 - Après l'installation
-Pour installer les pilotes réseaux et le RDP, voir [cette page](./postinstallation.md)
+Pour installer les pilotes réseaux et le RDP, voir [cette page](._postinstallation.md)
 
 ## Sources
 - [technonagib.fr](https://technonagib.fr/virtualiser-windows-11-proxmox-ve/)
