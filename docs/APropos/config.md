@@ -1,6 +1,6 @@
 # Configuration de mon PC
 
-- :simple-windows11: Windows 11 Pro
+- :material-microsoft: Windows 11 Pro
 
 - :simple-amd: AMD Ryzen 5 5600X
 
