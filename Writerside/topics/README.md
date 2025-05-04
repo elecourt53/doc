@@ -1,2 +1,0 @@
-# doc
-Doumentation utilisant MkDocs
