@@ -113,6 +113,7 @@ nav:
 
 #  - Jellyfin:
 #    - '🧑‍🏫 Présentation': 'Jellyfin/index.md'
+#    - '🔧 Installation sur TV Samsung 2017': 'Jellyfin/Samsung/index.md'
   - Audio:
     - "Lire des fichiers provenant d'un SACD (.dsf) sur Windows": 'Audio/SACD/index.md'
 
